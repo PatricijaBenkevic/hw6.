@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Cabin+Condensed&family=Lato:ital,wght@0,400;1,700&family=Noto+Sans+Mono&family=Noto+Sans+Vithkuqi:wght@500&family=Noto+Serif+Vithkuqi:wght@600&family=Playfair+Display:ital@1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    font-family: Bricolage Grotesque;
+    padding: 20px;
+    color : 
+    #F6F6F6;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+a {
+    color: 
+    #F6F6F6;
+    text-decoration: none;
+    font-family: Bricolage Grotesque;
+    font-size: 2em;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+nav:hover a {
+   opacity: 0.5;
+   
+}
+
+nav a:hover {
+    opacity: 1;
+}
+
+.box {
+    background: #AED8CC;
+    color: black;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Bricolage Grotesque;
+    font-size: 20px;
+    width: 300px;
+    transition-duration: 1s;
+    transition-property: width;
+    text-align: center;
+}
+
+.box:nth-of-type(1) {
+    transition-timing-function: linear;
+}
+
+section:hover .box {
+    cursor: pointer;
+    width: 100%;
+    background: 
+    #176B87;
+    border-radius: 20px 0 0 20px;
+    color: #64CCC5;
+    /* padding: 10px; */
+    font-size: 30px;
+    font-family: Bricolage Grotesque;
+}
+
+.droplet {
+    background:  #64CCC5;
+    color: #176B87;
+    border-radius: 50% 2%;
+    height: 200px;
+    width: 300px;
+    margin: 100px auto;
+    padding-top: 100px;
+    box-shadow: 0 0 5px #AED8CC;
+    transition: 0.3s;
+    transition-property: transform;
+    transition-timing-function: linear;
+    font-family: Bricolage Grotesque;
+  }
+
+  .droplet:hover {
+    cursor: pointer;
+    transform: rotate(90deg);
+    transform: rotate (-0.5turn);
+    background:#AED8CC;
+  }
+.droplet-container {
+    display: flex;
+}
+  .container {
+    background: #AED8CC;
+    max-width: 600px;
+    margin:10px auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.container .ball {
+    background: #176B87;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    box-shadow: 0 0 5px #AED8CC;
+    transition: 0.3s;
+}
+
+.transition:hover .ball {
+    transform: translate(600px)
+}
+ 
+  /* Keyfranes */
+.keyframes .ball {
+    animation-name: bouncing;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    /*animation-timing-function: linear;*/
+    animation-fill-mode:forwards;
+    animation: bouncing 0.9s infinite; }
+   
+@keyframes bouncing {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(450px);
+    }
+}
+
